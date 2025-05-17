@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Nicholas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        /* Areas of Interest Section */
+        .interests {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .interest-box {
+            flex: 1;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+        }
+        .interest-box img {
+            width: 80px;
+            height: 80px;
+        }
+        /* Projects Section */
+        .project-section {
+            margin-top: 30px;
+            text-align: left;
+        }
+        .project {
+            margin-bottom: 30px;
+        }
+        .carousel-wrapper {
+            position: relative;
+            overflow: hidden;
+            max-width: 100%;
+        }
+        .carousel-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-slide {
+            width: 100%;
+            flex: 0 0 100%; /* Ensures each image fills the container one at a time */
+            text-align: center;
+        }
+        .carousel-slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .caption {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #333;
+        }
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .prev { left: 10px; }
+        .next { right: 10px; }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons a {
+            display: inline-block;
+            padding: 12px;
+            width: 200px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: 0.3s;
+            margin: 10px;
+        }
+        .buttons a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        My Projects
+    </header>
+    <div class="container">
+
+        <!-- Areas of Interest -->
+        <h2>Areas of Interest</h2>
+        <div class="interests">
+            <div class="interest-box">
+                <img src="data-analytics-icon.png" alt="Data Analytics">
+                <h3>Data Analytics</h3>
+                <p>I enjoy transforming raw data into meaningful insights, making smarter decisions backed by data-driven strategies.</p>
+            </div>
+            <div class="interest-box">
+                <img src="digital-transformation-icon.png" alt="Digital Transformation">
+                <h3>Digital Transformation</h3>
+                <p>Optimizing workflows using automation and technology to drive efficiency across businesses.</p>
+            </div>
+            <div class="interest-box">
+                <img src="process-improvement-icon.png" alt="Process Improvement">
+                <h3>Process Improvement</h3>
+                <p>Enhancing business operations through streamlined processes, reducing redundancies and improving productivity.</p>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="project-section">
+            <h2>Projects</h2>
+
+            <!-- Alteryx -->
+            <div class="project">
+                <h3>Alteryx</h3>
+                <ul>
+                    <li>Automated data pipelines for finance reporting</li>
+                    <li>Built workflow that reduced manual data processing time by 80%</li>
+                </ul>
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-alteryx')">❮</button>
+                        
+                    <div class="carousel-wrapper">
+                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-alteryx')">❮</button>
+                        
+                        <div class="carousel-container" id="carousel-alteryx">
+                            <div class="carousel-slide">
+                                <img src="IMG_0008.jpg" alt="Alteryx Project Screenshot">
+                                <p class="caption">Automated financial data pipelines for reporting efficiency.</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="IMG_0008.JPG" alt="Alteryx Workflow Example">
+                                <p class="caption">Built a workflow that reduced manual processing time by 80%.</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="IMG_0008.JPG" alt="Alteryx Workflow Example">
+                                <p class="caption">Caption3.</p>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-alteryx')">❯</button>
+                    </div>
+            </div>
+
+            <!-- Excel -->
+            <div class="project">
+                <h3>Excel</h3>
+                <ul>
+                    <li>Automated data pipelines for finance reporting</li>
+                    <li>Built workflow that reduced manual data processing time by 80%</li>
+                </ul>
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-excel')">❮</button>
+                        
+                    <div class="carousel-wrapper">
+                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-excel')">❮</button>
+                        
+                        <div class="carousel-container" id="carousel-excel">
+                            <div class="carousel-slide">
+                                <img src="IMG_0012.jpg" alt="Alteryx Project Screenshot">
+                                <p class="caption">Automated financial data pipelines for reporting efficiency.</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="IMG_0012.JPG" alt="Alteryx Workflow Example">
+                                <p class="caption">Built a workflow that reduced manual processing time by 80%.</p>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-excel')">❯</button>
+                    </div>
+            </div>
+
+            <!-- PowerBI -->
+            <div class="project">
+                <h3>PowerBI</h3>
+                <ul>
+                    <li>Automated data pipelines for finance reporting</li>
+                    <li>Built workflow that reduced manual data processing time by 80%</li>
+                </ul>
+                    <div class="carousel">
+                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-powerbi')">❮</button>
+                        
+                    <div class="carousel-wrapper">
+                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-powerbi')">❮</button>
+                        
+                        <div class="carousel-container" id="carousel-powerbi">
+                            <div class="carousel-slide">
+                                <img src="IMG_0008.jpg" alt="Alteryx Project Screenshot">
+                                <p class="caption">Automated financial data pipelines for reporting efficiency.</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="IMG_0008.JPG" alt="Alteryx Workflow Example">
+                                <p class="caption">Built a workflow that reduced manual processing time by 80%.</p>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-powerbi')">❯</button>
+                    </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="buttons">
+            <a href="index.html">Back to main</a>
+        </div>
+    </div>
+
+    <script>
+        function moveSlide(direction, carouselId) {
+            let carousel = document.getElementById(carouselId);
+            let slides = carousel.getElementsByClassName("carousel-slide");
+            let totalSlides = slides.length;
+
+            // Track the current index
+            let currentIndex = parseInt(carousel.getAttribute("data-index")) || 0;
+
+            // Update index based on direction
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = totalSlides - 1;  // Wrap back
+            if (currentIndex >= totalSlides) currentIndex = 0;  // Wrap forward
+
+            // Apply sliding transition
+            carousel.setAttribute("data-index", currentIndex);
+            let shiftAmount = currentIndex * 100; // Move exactly one full slide width
+            carousel.style.transform = `translateX(-${shiftAmount}%)`;
+        }
+    </script>
+
+
+</body>
+</html>
