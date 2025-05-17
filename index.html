@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas' Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        .links a, .contact-button {
+            display: block;
+            margin: 10px auto;
+            padding: 12px;
+            width: 200px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .links a:hover, .contact-button:hover {
+            background-color: #555;
+        }
+        .contact-button {
+            display: block;
+            margin: 10px auto;
+            padding: 12px;
+            width: 200px; /* Ensure it matches the other buttons */
+            background-color: #a30202;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-button:hover {
+            background-color: #e90808;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Getting to know me</h1>
+    </header>
+    <div class="container">
+        <img src="portrait2.png" alt="Nicholas' Portrait">
+        <h2>Nicholas Chiang</h2>
+        <p>Finance Transformation | Data Analytics | Process Improvement</p>
+        <div class="links">
+            <a href="aboutme.html">About Me</a>
+            <a href="https://www.linkedin.com/in/nicholas-cww/">LinkedIn</a>
+            <a href="mycv.html">My CV</a>
+            <a href="dashboard.html">BI Dashboards</a>
+        <br>
+        <p>Contact me: (+65)90188204 | wen_wei_91@hotmail.com</p>
+        </div>
+        <button class="contact-button" onclick="window.location.href='mailto:wen_wei_91@hotmail.com?subject=Inquiry from Your Portfolio&body=Hello Nicholas,'">Contact Me</button>
+
+    </div>
+</body>
+</html>
