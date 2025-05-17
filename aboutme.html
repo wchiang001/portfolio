@@ -31,13 +31,17 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            flex-wrap: wrap; /* Ensures flexibility on smaller screens */
         }
+
         .image-container {
             flex: 1;
+            min-width: 250px; /* Ensures image doesn't shrink too much */
+            max-width: 300px;
         }
+
         .banner-image {
             width: 100%;
-            max-width: 300px;
             height: auto;
             border-radius: 8px;
             object-fit: cover;
@@ -89,6 +93,22 @@
         .buttons a:hover {
             background-color: #555;
         }
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Stack image and text vertically */
+                text-align: center; /* Center-align text */
+            }
+
+            .image-container {
+                width: 90%; /* Allows image scaling */
+                max-width: 350px;
+            }
+
+            .career {
+                width: 100%;
+                font-size: 14px; /* Adjust font size for readability */
+            }
+        }
     </style>
 </head>
 <body>
@@ -103,7 +123,7 @@
             <div class="career">
                 <p>Hi! I’m a Chartered Accountant by training, but over the years I’ve found my real interest lies in using data and technology to solve problems and transform how people work. I started in audit at EY, then moved into the insurance industry through Prudential’s management associate program — and that’s where I got hands-on with analytics and cross-functional projects.</p>
                 <p>Since then, I’ve led initiatives in areas like operations optimization, finance transformation, and performance management, often acting as a bridge between data teams and business stakeholders. I work with tools like SQL, Power BI, Alteryx, and Excel, and I’m currently diving into Python to grow further. I’m especially passionate about making work processes smarter, clearer, and more human through data and thoughtful design.</p>
-                <p>p.s. I've limited knowledge of HTML but has built this website with the help of Co-pilot and ChatGPT!</p>
+                <p>p.s. Please pardon this simple UI. I'm mostly self-taught on HTML but has built this website with the help of Co-pilot and ChatGPT!</p>
             </div>
         </div>
 

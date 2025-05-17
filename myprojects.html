@@ -30,16 +30,16 @@
         /* Areas of Interest Section */
         .interests {
             display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
+            flex-wrap: wrap; /* Allows items to stack on smaller screens */
+            justify-content: center; /* Centers items when they stack */
+            gap: 20px; /* Adds spacing between items */
         }
+
         .interest-box {
             flex: 1;
-            padding: 15px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
-            margin: 10px;
+            min-width: 250px; /* Ensures boxes don't shrink too small */
+            max-width: 300px; /* Prevents excessive stretching */
+            text-align: center;
         }
         .interest-box img {
             width: 80px;
@@ -113,6 +113,20 @@
         .buttons a:hover {
             background-color: #555;
         }
+        .interests .carousel-btn {
+            display: none;
+        }
+        @media (max-width: 768px) {
+            .interests {
+                flex-direction: column; /* Stacks items vertically on small screens */
+                align-items: center; /* Centers them */
+            }
+
+            .interest-box {
+                width: 90%; /* Adjusts width for smaller screens */
+                max-width: 350px; /* Ensures readable size */
+            }
+        }
     </style>
 </head>
 <body>
@@ -125,7 +139,7 @@
         <h2>Areas of Interest</h2>
         <div class="interests">
             <div class="interest-box">
-                <img src="data-analytics-icon.png" alt="Data Analytics">
+                <img src="analyticslogo.png" alt="Data Analytics">
                 <h3>Data Analytics</h3>
                 <p>I enjoy transforming raw data into meaningful insights, making smarter decisions backed by data-driven strategies.</p>
             </div>
@@ -153,8 +167,7 @@
                     <li>Built workflow that reduced manual data processing time by 80%</li>
                 </ul>
                     <div class="carousel">
-                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-alteryx')">❮</button>
-                        
+
                     <div class="carousel-wrapper">
                         <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-alteryx')">❮</button>
                         
@@ -164,11 +177,11 @@
                                 <p class="caption">Automated financial data pipelines for reporting efficiency.</p>
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_0008.JPG" alt="Alteryx Workflow Example">
+                                <img src="IMG_0008.jpg" alt="Alteryx Workflow Example">
                                 <p class="caption">Built a workflow that reduced manual processing time by 80%.</p>
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_0008.JPG" alt="Alteryx Workflow Example">
+                                <img src="IMG_0008.jpg" alt="Alteryx Workflow Example">
                                 <p class="caption">Caption3.</p>
                             </div>
                         </div>
@@ -185,8 +198,7 @@
                     <li>Built workflow that reduced manual data processing time by 80%</li>
                 </ul>
                     <div class="carousel">
-                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-excel')">❮</button>
-                        
+
                     <div class="carousel-wrapper">
                         <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-excel')">❮</button>
                         
@@ -196,7 +208,7 @@
                                 <p class="caption">Automated financial data pipelines for reporting efficiency.</p>
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_0012.JPG" alt="Alteryx Workflow Example">
+                                <img src="IMG_0012.jpg" alt="Alteryx Workflow Example">
                                 <p class="caption">Built a workflow that reduced manual processing time by 80%.</p>
                             </div>
                         </div>
@@ -213,8 +225,7 @@
                     <li>Built workflow that reduced manual data processing time by 80%</li>
                 </ul>
                     <div class="carousel">
-                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-powerbi')">❮</button>
-                        
+
                     <div class="carousel-wrapper">
                         <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-powerbi')">❮</button>
                         
@@ -224,7 +235,7 @@
                                 <p class="caption">Automated financial data pipelines for reporting efficiency.</p>
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_0008.JPG" alt="Alteryx Workflow Example">
+                                <img src="IMG_0008.jpg" alt="Alteryx Workflow Example">
                                 <p class="caption">Built a workflow that reduced manual processing time by 80%.</p>
                             </div>
                         </div>
