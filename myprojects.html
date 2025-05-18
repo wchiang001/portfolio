@@ -30,19 +30,38 @@
         /* Areas of Interest Section */
         .interests {
             display: flex;
-            flex-wrap: wrap; /* Allows items to stack on smaller screens */
-            justify-content: center; /* Centers items when they stack */
-            gap: 20px; /* Adds spacing between items */
+            justify-content: center;
+            align-items: stretch; /* Forces equal height */
+            gap: 20px;
+            flex-wrap: wrap;
         }
 
         .interest-box {
             flex: 1;
-            min-width: 250px; /* Ensures boxes don't shrink too small */
-            max-width: 300px; /* Prevents excessive stretching */
+            min-width: 250px;
+            max-width: 300px;
             text-align: center;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: auto; /* Allows for flexibility */
+            min-height: 250px; /* Ensures all boxes are at least this height */
         }
+
+        /* Ensure paragraph fills space evenly */
+        .interest-box p {
+            flex-grow: 1; /* Makes sure shorter text expands */
+        }
+
+
         .interest-box img {
-            width: 80px;
+            display: block;
+            margin: auto; /* Centers the icon */
+            width: 80px; /* Adjust size if needed */
             height: 80px;
         }
         /* Projects Section */
@@ -53,6 +72,36 @@
         .project {
             margin-bottom: 30px;
         }
+        .project-card {
+            background-color: #fff;
+            border: none; /* Remove border */
+            border-radius: 8px; /* Keeps rounded corners for a clean look */
+            padding: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .project-card h2 {
+            color: #333;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .project-card h3 {
+            color: #007bff;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .project-card ul {
+            padding-left: 20px;
+        }
+
+        .project-card li {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
         .carousel-wrapper {
             position: relative;
             overflow: hidden;
@@ -141,17 +190,17 @@
             <div class="interest-box">
                 <img src="analyticslogo.png" alt="Data Analytics">
                 <h3>Data Analytics</h3>
-                <p>I enjoy transforming raw data into meaningful insights, making smarter decisions backed by data-driven strategies.</p>
+                <p>I enjoy uncovering insights that drive smarter decisions. With a foundation in finance and experience in SQL, Power BI, and Alteryx, I’ve worked on translating raw data into clear business narratives — from performance tracking dashboards to deep dives into sales behavior. To deepen my skillset, I’m currently learning Python to handle more complex data work and broaden my analytical toolkit.</p>
             </div>
             <div class="interest-box">
-                <img src="digital-transformation-icon.png" alt="Digital Transformation">
-                <h3>Digital Transformation</h3>
-                <p>Optimizing workflows using automation and technology to drive efficiency across businesses.</p>
-            </div>
-            <div class="interest-box">
-                <img src="process-improvement-icon.png" alt="Process Improvement">
+                <img src="iteration.png" alt="Process Improvement">
                 <h3>Process Improvement</h3>
-                <p>Enhancing business operations through streamlined processes, reducing redundancies and improving productivity.</p>
+                <p>I’ve often found myself as the “translator” between data teams and business leaders. Over the years, I’ve helped teams simplify reporting cycles, standardize metrics, and reduce repetitive tasks through better design and automation. Whether it’s streamlining operations or enabling self-serve analytics, I enjoy finding practical ways to improve how people work every day.</p>
+            </div>
+            <div class="interest-box">
+                <img src="online-learning.png" alt="Lifelong Learning">
+                <h3>Lifelong Learning</h3>
+                <p>I’m naturally curious and always looking to sharpen my skills — whether it’s picking up Python, exploring new data tools, or diving into topics like behavioral design. I enjoy learning not just for career growth, but because I genuinely find joy in discovering better ways to think and work.</p>
             </div>
         </div>
 
@@ -219,13 +268,34 @@
 
             <!-- PowerBI -->
             <div class="project">
-                <h3>PowerBI</h3>
-                <ul>
-                    <li>Automated data pipelines for finance reporting</li>
-                    <li>Built workflow that reduced manual data processing time by 80%</li>
-                </ul>
-                    <div class="carousel">
+                    <div class="project-card">
+                        <h2>🚀 Strategic Transformation Dashboard (PowerBI)</h2>
 
+                        <h3>📌 Purpose</h3>
+                        <p>To support the company’s transformation programme, I developed a Power BI dashboard that provides stakeholders and senior management with a consolidated, real-time view of all ongoing strategic initiatives.</p>
+
+                        <h3>🔍 What I Did</h3>
+                        <ul>
+                            <li>Took the initiative to move away from slow, manual Excel reports and build an interactive Power BI dashboard.</li>
+                            <li>Consolidated data from various sources including finance systems, Excel trackers, and even email submissions from initiative owners.</li>
+                            <li>Calculated high-level ROI for each initiative based on projected cost savings and revenue benefits.</li>
+                            <li>Merged actual vs. budgeted investment data with benefit realization tracking to give a holistic view of performance.</li>
+                            <li>Connected additional metadata such as initiative status (RAG), business pillars, and ownership to enhance visibility and filtering.</li>
+                            <li>Dealt with data inconsistencies and gaps by standardizing inputs and collaborating with business units to clean and validate information.</li>
+                        </ul>
+
+                        <h3>🎯 Outcome & Business Impact</h3>
+                        <ul>
+                            <li>Empowered the Transformation Office & Leadership to monitor Monitor initiatives at a glance across business pillars</li>
+                            <li>Enabled stakeholders to self-serve and validate their own initiative data.</li>
+                            <li>Supported executive decision-making on prioritization, investment, and next steps.</li>
+                        </ul>
+
+                        <h3>🛠️ Tools Used</h3>
+                        <p>Power BI, Excel, stakeholder interviews.</p>
+                    </div>
+
+                    <div class="carousel">
                     <div class="carousel-wrapper">
                         <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-powerbi')">❮</button>
                         
