@@ -123,8 +123,8 @@
             object-fit: cover;
         }
         .caption {
-            font-size: 16px;
-            font-weight: 600;
+            font-size: 14px;
+            font-weight: 500;
             margin-top: 10px;
             color: #333;
         }
@@ -188,17 +188,17 @@
         <h2>Areas of Interest</h2>
         <div class="interests">
             <div class="interest-box">
-                <img src="analyticslogo.png" alt="Data Analytics">
+                <img src="images/analyticslogo.png" alt="Data Analytics">
                 <h3>Data Analytics</h3>
                 <p>I enjoy uncovering insights that drive smarter decisions. With a foundation in finance and experience in SQL, Power BI, and Alteryx, I’ve worked on translating raw data into clear business narratives — from performance tracking dashboards to deep dives into sales behavior. To deepen my skillset, I’m currently learning Python to handle more complex data work and broaden my analytical toolkit.</p>
             </div>
             <div class="interest-box">
-                <img src="iteration.png" alt="Process Improvement">
+                <img src="images/iteration.png" alt="Process Improvement">
                 <h3>Process Improvement</h3>
                 <p>I’ve often found myself as the “translator” between data teams and business leaders. Over the years, I’ve helped teams simplify reporting cycles, standardize metrics, and reduce repetitive tasks through better design and automation. Whether it’s streamlining operations or enabling self-serve analytics, I enjoy finding practical ways to improve how people work every day.</p>
             </div>
             <div class="interest-box">
-                <img src="online-learning.png" alt="Lifelong Learning">
+                <img src="images/online-learning.png" alt="Lifelong Learning">
                 <h3>Lifelong Learning</h3>
                 <p>I’m naturally curious and always looking to sharpen my skills — whether it’s picking up Python, exploring new data tools, or diving into topics like behavioral design. I enjoy learning not just for career growth, but because I genuinely find joy in discovering better ways to think and work.</p>
             </div>
@@ -208,61 +208,63 @@
         <div class="project-section">
             <h2>Projects</h2>
 
-            <!-- Alteryx -->
+            <!-- Analytics -->
             <div class="project">
-                <h3>Alteryx</h3>
-                <ul>
-                    <li>Automated data pipelines for finance reporting</li>
-                    <li>Built workflow that reduced manual data processing time by 80%</li>
-                </ul>
-                    <div class="carousel">
+                    <div class="project-card">
+                        <h2>🚀 Sales Channel Profiling & Productivity Analysis (Alteryx/PowerBI)</h2>
 
-                    <div class="carousel-wrapper">
-                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-alteryx')">❮</button>
-                        
-                        <div class="carousel-container" id="carousel-alteryx">
-                            <div class="carousel-slide">
-                                <img src="IMG_0008.jpg" alt="Alteryx Project Screenshot">
-                                <p class="caption">Automated financial data pipelines for reporting efficiency.</p>
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="IMG_0008.jpg" alt="Alteryx Workflow Example">
-                                <p class="caption">Built a workflow that reduced manual processing time by 80%.</p>
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="IMG_0008.jpg" alt="Alteryx Workflow Example">
-                                <p class="caption">Caption3.</p>
-                            </div>
-                        </div>
-                        
-                        <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-alteryx')">❯</button>
+                        <h3>📌 Purpose</h3>
+                        <p>This one-week analytics project was initiated to help senior management compare the recruitment strategies and early productivity of new sales hires across different distribution channels. The aim was to assess whether sales channels differ significantly in how they attract new talents — and how those differences impact performance outcomes.</p>
+
+                        <h3>✅ What I Did</h3>
+                        <ul>
+                            <li>Scoped and delivered the entire analysis within one week under tight management deadlines.</li>
+                            <li>Consolidated fragmented data from multiple sources: Manually maintained Excel trackers, SAP BI transaction-level sales data, agent database for demographic profiles and employment history</li>
+                            <li>Used Alteryx to join and cleanse large datasets via unique Agent IDs. Engineered new time-based metrics to track each agent’s sales by months since joining (e.g., Month 1, Month 2...).</li>
+                            <li>Created calculated fields like:
+                                <ul>
+                                    <li>Total sales per agent per month of employment</li>
+                                    <li>Average sales per case</li>
+                                    <li>Product Mix per cohort</li>
+                                </ul>
+                            </li>
+                            <li>Built a Power BI dashboard to visualize trends and compare agent profiles and productivity across channels.</li>
+                        </ul>
+
+                        <h3>🔎 Key Insights</h3>
+                        <ul>
+                            <li>One channel had significantly higher attrition rates despite hiring more experienced agents — likely due to higher performance pressure.</li>
+                            <li>Another channel showed higher productivity per agent, but the small sample size limited statistical confidence.</li>
+                            <li>Profile breakdowns by age group and previous employment helped suggest where each channel’s recruitment strategy was most effective.</li>
+                        </ul>
+
+                        <h3>🌟 Outcome</h3>
+                        <p>Although constrained by time and data completeness, the dashboard provided management with actionable hypotheses on recruitment and retention strategies. It also served as a proof of concept for future, more in-depth channel performance studies.</p>
+
+                        <h3>🛠️ Tools Used</h3>
+                        <p>Alteryx, Power BI, Excel, SAP Business Intelligence</p>
                     </div>
-            </div>
 
-            <!-- Excel -->
-            <div class="project">
-                <h3>Excel</h3>
-                <ul>
-                    <li>Automated data pipelines for finance reporting</li>
-                    <li>Built workflow that reduced manual data processing time by 80%</li>
-                </ul>
                     <div class="carousel">
-
                     <div class="carousel-wrapper">
-                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-excel')">❮</button>
+                        <button class="carousel-btn prev" onclick="moveSlide(-1, 'carousel-analytics')">❮</button>
                         
-                        <div class="carousel-container" id="carousel-excel">
+                        <div class="carousel-container" id="carousel-analytics">
                             <div class="carousel-slide">
-                                <img src="IMG_0012.jpg" alt="Alteryx Project Screenshot">
-                                <p class="caption">Automated financial data pipelines for reporting efficiency.</p>
+                                <img src="images/Alteryx1.jpg" alt="Alteryx Workflow Screenshot">
+                                <p class="caption"><b>Alteryx</b>: Workflow that consolidated various excel files and performing calculations on millions of rows of data within mere 15 seconds.</p>
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_0012.jpg" alt="Alteryx Workflow Example">
-                                <p class="caption">Built a workflow that reduced manual processing time by 80%.</p>
+                                <img src="images/Manpower.png" alt="PBI Screenshot-Manpower Summary">
+                                <p class="caption"><b>PowerBI</b>: An overview of sales agents manpower numbers and their profile/background based on different sales channel. Note: Dummy data was used.</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="images/Productivity.png" alt="PBI Screenshot-Productivity">
+                                <p class="caption"><b>PowerBI</b>: An overview of productivity of each channel, normalised on a per sales agent basis; Product mix with slicer to enable quick analysis. Note: Dummy data was used.</p>
                             </div>
                         </div>
                         
-                        <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-excel')">❯</button>
+                        <button class="carousel-btn next" onclick="moveSlide(1, 'carousel-analytics')">❯</button>
                     </div>
             </div>
 
@@ -274,7 +276,7 @@
                         <h3>📌 Purpose</h3>
                         <p>To support the company’s transformation programme, I developed a Power BI dashboard that provides stakeholders and senior management with a consolidated, real-time view of all ongoing strategic initiatives.</p>
 
-                        <h3>🔍 What I Did</h3>
+                        <h3>✅ What I Did</h3>
                         <ul>
                             <li>Took the initiative to move away from slow, manual Excel reports and build an interactive Power BI dashboard.</li>
                             <li>Consolidated data from various sources including finance systems, Excel trackers, and even email submissions from initiative owners.</li>
@@ -301,12 +303,12 @@
                         
                         <div class="carousel-container" id="carousel-powerbi">
                             <div class="carousel-slide">
-                                <img src="IMG_0008.jpg" alt="Alteryx Project Screenshot">
-                                <p class="caption">Automated financial data pipelines for reporting efficiency.</p>
+                                <img src="images/BOW_InitiativeView.png" alt="PBI Screenshot-Programme">
+                                <p class="caption"><b>PowerBI</b>: An overview of the programme and initiatives, with slicers to enable users to view in different dimensions. Project details can also be viewed by selecting the project.</p>
                             </div>
                             <div class="carousel-slide">
-                                <img src="IMG_0008.jpg" alt="Alteryx Workflow Example">
-                                <p class="caption">Built a workflow that reduced manual processing time by 80%.</p>
+                                <img src="images/BOW_NumbersView.png" alt="PBI Screenshot-Numbers">
+                                <p class="caption"><b>PowerBI</b>: An overview of the investment spend and benefits across the initiatives, allow tracking of utilization and realization.</p>
                             </div>
                         </div>
                         
