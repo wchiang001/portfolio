@@ -1,7 +1,6 @@
 import requests
 import json
 import pandas as pd
-import matplotlib.pyplot as plt
 
 
 base_url = "https://data.gov.sg/api/action/datastore_search?resource_id="
